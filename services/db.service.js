@@ -1,4 +1,5 @@
 const MongoClient = require('mongodb').MongoClient
+const logger = require('./logger.service')
 
 module.exports = {
     getCollection,
@@ -16,7 +17,7 @@ async function getCollection(collectionName) {
         const collection = await db.collection(collectionName)
         return collection
     } catch (err) {
-        console.log('Failed to get Mongo collection', err)
+        logger.error('Failed to get Mongo collection', err)
         throw err
     }
 }
@@ -27,10 +28,10 @@ async function connect() {
         const client = await MongoClient.connect(dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
         const db = client.db(dbName)
         dbConn = db
-        console.log('connect to Mongo');
+        logger.info('connect to Mongo');
         return db
     } catch (err) {
-        console.log('Cannot Connect to DB', err)
+        logger.error('Cannot Connect to DB', err)
         throw err
     }
 }
