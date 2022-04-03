@@ -1,0 +1,56 @@
+2.4.2022, 10:22:55 - INFO - connect to Mongo
+2.4.2022, 11:39:01 - INFO - connect to Mongo
+2.4.2022, 11:39:04 - ERROR - cannot find songs | {}
+2.4.2022, 11:39:04 - ERROR - Failed to get songs | {}
+2.4.2022, 12:08:07 - INFO - connect to Mongo
+2.4.2022, 12:08:07 - ERROR - cannot find songs | {}
+2.4.2022, 12:08:07 - ERROR - Failed to get songs | {}
+2.4.2022, 12:21:23 - INFO - connect to Mongo
+2.4.2022, 12:21:23 - ERROR - cannot find songs | {}
+2.4.2022, 12:21:23 - ERROR - Failed to get songs | {}
+2.4.2022, 12:22:12 - INFO - connect to Mongo
+2.4.2022, 12:22:12 - ERROR - Failed to get songs | {}
+2.4.2022, 12:23:43 - INFO - connect to Mongo
+2.4.2022, 12:23:43 - ERROR - Failed to get songs | {}
+2.4.2022, 12:24:43 - INFO - connect to Mongo
+2.4.2022, 12:24:43 - ERROR - cannot find songs | {}
+2.4.2022, 12:24:43 - ERROR - Failed to get songs | {}
+2.4.2022, 12:25:36 - ERROR - cannot find songs | {}
+2.4.2022, 12:25:36 - ERROR - Failed to get songs | {}
+2.4.2022, 12:25:45 - INFO - connect to Mongo
+2.4.2022, 12:25:45 - ERROR - cannot find songs | {}
+2.4.2022, 12:25:45 - ERROR - Failed to get songs | {}
+2.4.2022, 14:10:49 - INFO - connect to Mongo
+2.4.2022, 14:10:49 - ERROR - cannot insert song | {}
+2.4.2022, 14:10:49 - ERROR - Failed to add song | {}
+2.4.2022, 14:11:44 - INFO - connect to Mongo
+2.4.2022, 14:11:44 - ERROR - cannot insert song | {}
+2.4.2022, 14:11:44 - ERROR - Failed to add song | {}
+2.4.2022, 14:11:56 - ERROR - cannot insert song | {}
+2.4.2022, 14:11:56 - ERROR - Failed to add song | {}
+2.4.2022, 14:12:05 - INFO - connect to Mongo
+2.4.2022, 14:12:05 - ERROR - cannot insert song | {}
+2.4.2022, 14:12:05 - ERROR - Failed to add song | {}
+2.4.2022, 14:12:44 - INFO - connect to Mongo
+2.4.2022, 14:12:44 - ERROR - cannot insert song | {}
+2.4.2022, 14:12:44 - ERROR - Failed to add song | {}
+2.4.2022, 14:13:36 - INFO - connect to Mongo
+2.4.2022, 14:13:36 - ERROR - cannot insert song | {}
+2.4.2022, 14:13:36 - ERROR - Failed to add song | {}
+2.4.2022, 14:14:13 - ERROR - cannot insert song | {}
+2.4.2022, 14:14:13 - ERROR - Failed to add song | {}
+2.4.2022, 14:19:11 - INFO - connect to Mongo
+2.4.2022, 14:19:11 - ERROR - cannot insert song | {}
+2.4.2022, 14:19:11 - ERROR - Failed to add song | {}
+2.4.2022, 14:21:32 - INFO - connect to Mongo
+2.4.2022, 14:21:44 - ERROR - cannot find songs | {}
+2.4.2022, 14:21:44 - ERROR - Failed to get songs | {}
+2.4.2022, 14:24:47 - INFO - connect to Mongo
+2.4.2022, 14:25:58 - ERROR - cannot find songs | {}
+2.4.2022, 14:25:58 - ERROR - Failed to get songs | {}
+2.4.2022, 14:28:08 - ERROR - cannot find songs | {}
+2.4.2022, 14:28:08 - ERROR - Failed to get songs | {}
+2.4.2022, 14:29:10 - INFO - connect to Mongo
+2.4.2022, 14:29:10 - ERROR - cannot find songs | {}
+2.4.2022, 14:29:10 - ERROR - Failed to get songs | {}
+2.4.2022, 14:30:23 - INFO - connect to Mongo
