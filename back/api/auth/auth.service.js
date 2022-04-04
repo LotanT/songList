@@ -32,7 +32,6 @@ async function signup(username, password, email) {
 
     const hash = await bcrypt.hash(password, saltRounds)
     const user = add({ username, password: hash, email })
-    // delete user.password
     return
 }
 

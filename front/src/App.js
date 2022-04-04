@@ -5,7 +5,6 @@ import { SongList } from './pages/SongList';
 import { Header } from './cmps/Header';
 import { Login } from './pages/LogIn';
 import { UserMsg } from './cmps/UserMsg';
-// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {

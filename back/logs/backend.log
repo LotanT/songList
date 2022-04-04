@@ -192,3 +192,24 @@
 4.4.2022, 19:10:31 - DEBUG - auth.service - signup with username: lotanlo, email: asdf@gamil.com
 4.4.2022, 19:10:31 - DEBUG - auth.route - new account created: undefined
 4.4.2022, 19:10:31 - DEBUG - auth.service - login with username: lotanlo
+4.4.2022, 20:40:39 - DEBUG - auth.service - login with username: lotan
+4.4.2022, 20:40:39 - INFO - connect to Mongo
+4.4.2022, 20:40:54 - DEBUG - auth.service - login with username: huxh
+4.4.2022, 20:40:54 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 20:41:03 - DEBUG - auth.service - login with username: huxh
+4.4.2022, 20:41:03 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 20:41:26 - DEBUG - auth.service - login with username: huxh
+4.4.2022, 20:41:26 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 20:41:36 - DEBUG - auth.service - login with username: huxh
+4.4.2022, 20:41:36 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 20:41:52 - DEBUG - auth.service - login with username: huxh
+4.4.2022, 20:41:52 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 20:43:33 - DEBUG - auth.service - login with username: huxh
+4.4.2022, 20:43:33 - INFO - connect to Mongo
+4.4.2022, 20:43:33 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 20:43:59 - DEBUG - auth.service - login with username: huxh
+4.4.2022, 20:43:59 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 20:44:09 - DEBUG - auth.service - signup with username: huxh, email: huxh@huxh.com
+4.4.2022, 20:44:09 - DEBUG - auth.route - new account created: undefined
+4.4.2022, 20:44:09 - DEBUG - auth.service - login with username: huxh
+4.4.2022, 20:44:44 - DEBUG - auth.service - login with username: huxh
