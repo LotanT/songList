@@ -1,24 +1,30 @@
-@media all and (min-width: 480px) {
-    .Login {
-      padding: 60px 0;
-    }
-  
-    .Login form {
-      margin: 0 auto;
-      max-width: 320px;
-    }
+.Login {
+  padding: 60px 0;
+  background-image: url('../imgs/background-img.jpg');
+  background-size: cover !important;
+  background-position: center !important;
+  height: 90vh;
+}
 
-    .btn{
-        margin-top: 15px;
-    }
+.Login form {
+  margin: 0 auto;
+  max-width: 320px;
+  padding: 10px;
+  background: #ffffffb3;
+  border-radius: 5px;
+}
 
-    .footer{
-        display: flex;
-        flex-direction: column;
-        .signup{
-          color: #0d6efd;
-          cursor: pointer;
-          margin-top: 10px;
-        }
-    }
+.btn {
+  margin-top: 15px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  .signup {
+    color: #0d6efd;
+    cursor: pointer;
+    margin-top: 10px;
   }
+}

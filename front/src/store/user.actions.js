@@ -10,7 +10,7 @@ export function onLogin(credentials) {
                 user
             })
         } catch (err) {
-            showErrorMsg('Cannot login')
+            showErrorMsg('Cannot login, Try again')
             console.log('Cannot login', err)
         }
     }
@@ -25,7 +25,7 @@ export function onSignup(credentials) {
                 user
             })
         } catch (err) {
-            showErrorMsg('Cannot signup')
+            showErrorMsg('Cannot signup, Try again')
             console.log('Cannot signup', err)
         }
 

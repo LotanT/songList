@@ -7,8 +7,7 @@ export function UserMsg () {
 
   const [msg , setMsg] = useState(null)
 
-  useEffect(()=>{
-    // Here we listen to the event that we emited, its important to remove the listener 
+  useEffect(()=>{ 
     const removeEvent = eventBusService.on('show-user-msg', (msg) => {
       setMsg(msg)
       setTimeout(()=>{

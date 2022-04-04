@@ -13,8 +13,9 @@ export function _SongList({ user, songList, addSongList, loadSongList }) {
   useEffect(() => {
     if (!user) {
       navigate('/login');
+    } else{
+      loadSongList(user.username);
     }
-    loadSongList(user.username);
   }, []);
 
   const setListSong = (newSongList) => {

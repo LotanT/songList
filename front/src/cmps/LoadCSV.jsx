@@ -39,15 +39,14 @@ export function LoadCSV ({setSongList}) {
     };
 
     return(
-        <div style={{ textAlign: "center" }}>
-        <form>
+        <div className='upload'>
+        <form className='upload-csv'>
             <input
                 type={"file"}
                 id={"csvFileInput"}
                 accept={".csv"}
                 onChange={handleOnChange}
             />
-
             <button
                 onClick={(e) => {
                     handleOnSubmit(e);
