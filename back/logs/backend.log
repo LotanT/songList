@@ -135,3 +135,33 @@
 4.4.2022, 17:55:36 - INFO - connect to Mongo
 4.4.2022, 17:56:53 - DEBUG - auth.service - login with username: lotan
 4.4.2022, 17:56:53 - INFO - connect to Mongo
+4.4.2022, 18:07:56 - DEBUG - auth.service - login with username: lotan
+4.4.2022, 18:08:14 - DEBUG - auth.service - login with username: lotant
+4.4.2022, 18:08:15 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 18:10:21 - DEBUG - auth.service - login with username: lotant
+4.4.2022, 18:10:21 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 18:12:43 - DEBUG - auth.service - login with username: sadf
+4.4.2022, 18:12:43 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 18:13:30 - DEBUG - auth.service - login with username: asdf
+4.4.2022, 18:13:30 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 18:17:01 - DEBUG - auth.service - login with username: asdf
+4.4.2022, 18:17:01 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 18:17:18 - DEBUG - auth.service - login with username: lotan
+4.4.2022, 18:19:05 - DEBUG - auth.service - login with username: asdf
+4.4.2022, 18:19:05 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 18:19:10 - DEBUG - auth.service - login with username: lotan
+4.4.2022, 18:19:55 - DEBUG - auth.service - login with username: asdf
+4.4.2022, 18:19:55 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 18:19:59 - DEBUG - auth.service - login with username: lotan
+4.4.2022, 18:21:45 - DEBUG - auth.service - login with username: lotan
+4.4.2022, 18:23:04 - DEBUG - auth.service - login with username: lotan
+4.4.2022, 18:23:51 - DEBUG - auth.service - login with username: lotan
+4.4.2022, 18:24:14 - DEBUG - auth.service - signup with username: lotant, email: lotan@gamil.com
+4.4.2022, 18:24:14 - DEBUG - auth.route - new account created: undefined
+4.4.2022, 18:24:14 - DEBUG - auth.service - login with username: lotant
+4.4.2022, 18:24:14 - ERROR - Failed to signup Invalid username or password
+4.4.2022, 18:24:33 - DEBUG - auth.service - signup with username: lotant, email: lotan@gamil.com
+4.4.2022, 18:24:33 - ERROR - Failed to signup Username already taken
+4.4.2022, 18:24:36 - DEBUG - auth.service - signup with username: lotantt, email: lotan@gamil.com
+4.4.2022, 18:24:36 - DEBUG - auth.route - new account created: undefined
+4.4.2022, 18:24:36 - DEBUG - auth.service - login with username: lotantt

@@ -6,8 +6,8 @@ import {onLogout} from '../store/user.actions.js'
 function _Header ({user, onLogout}) { 
     let navigate = useNavigate();
     
-    const logout = () => {
-        onLogout()
+    const logout = async() => {
+        await onLogout()
         navigate('/login')
     } 
     

@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { onLogin, onSignup } from '../store/user.actions';
 
-function _Login({onLogin, onSignup}) {
+function _Login({user ,onLogin, onSignup}) {
 
   let navigate = useNavigate();
 
@@ -13,6 +13,10 @@ function _Login({onLogin, onSignup}) {
   const [password, setPassword] = useState('');
   const [userName, setUserName] = useState('');
   const [isLogIn, setIsLogIn] = useState(true);
+
+  useEffect(()=>{
+    if(user) navigate('/songList')
+  },[user])
 
   const validateForm = () => {
     return userName.length > 0 && password.length > 0;
@@ -25,13 +29,11 @@ function _Login({onLogin, onSignup}) {
   };
 
   const logIn = async () => {
-    await onLogin({ username: userName , password });
-    navigate('/songlist')
+    const ans = await onLogin({ username: userName , password });
   };
   
   const signup = async () => {
     await onSignup({ email, password, username: userName });
-    navigate('/songlist')
   };
 
   const toggleIsLogIn = () => {

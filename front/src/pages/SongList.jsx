@@ -13,7 +13,6 @@ export function _SongList({ user, songList, addSongList, loadSongList }) {
   useEffect(() => {
     if (!user) {
       navigate('/login');
-      showErrorMsg('Login first!');
     }
     loadSongList(user.username);
   }, []);
