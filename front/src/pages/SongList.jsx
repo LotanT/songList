@@ -4,9 +4,11 @@ import React, { useEffect, useState } from 'react';
 import { showErrorMsg } from '../services/event-bus.service.js'
 import { LoadCSV } from '../cmps/LoadCSV.jsx';
 
-export function _SongList({user}){
-    let navigate = useNavigate();
+import {setSongList} from '../store/songList.actions'
 
+export function _SongList({user, songList, setSongList}){
+    let navigate = useNavigate();
+    console.log(songList);
     useEffect(()=>{
         if(!user){
             navigate('/login')
@@ -18,7 +20,7 @@ export function _SongList({user}){
 
     return(
         <section className='song-list'>
-         <LoadCSV/>
+         <LoadCSV setSongList={setSongList}/>
         </section>
     )
 }
@@ -26,10 +28,11 @@ export function _SongList({user}){
 function mapStateToProps(state) {
     return {
         user: state.userModule.user,
+        songList: state.songListModule.songList
     }
 }
 const mapDispatchToProps = {
-    
+    setSongList
 }
 
 export const SongList = connect(mapStateToProps, mapDispatchToProps)(_SongList)

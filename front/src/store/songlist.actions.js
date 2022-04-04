@@ -1,51 +1,30 @@
-import { userService } from "../services/user.service.js";
-import { showErrorMsg } from '../services/event-bus.service.js'
 
-export function onLogin(credentials) {
-    console.log(credentials);
+
+export function setSongList(songList) {
     return async (dispatch) => {
         try {
-            console.log(credentials);
-            const user = await userService.login(credentials)
+            // const user = await userService.login(credentials)
             dispatch({
-                type: 'SET_USER',
-                user
+                type: 'SET_SONGLIST',
+                songList
             })
         } catch (err) {
-            showErrorMsg('Cannot login')
-            console.log('Cannot login', err)
+            console.log('Cannot set song list', err)
         }
     }
 }
 
-export function onSignup(credentials) {
-    return async (dispatch) => {
-        try {
-            const user = await userService.signup(credentials)
-            dispatch({
-                type: 'SET_USER',
-                user
-            })
-        } catch (err) {
-            showErrorMsg('Cannot signup')
-            console.log('Cannot signup', err)
-        }
+// export function onSignup(songList) {
+//     return async (dispatch) => {
+//         try {
+//             // const user = await userService.signup(credentials)
+//             dispatch({
+//                 type: 'SET_SONGLIST',
+//                 songList
+//             })
+//         } catch (err) {
+//             console.log('Cannot signup', err)
+//         }
 
-    }
-}
-
-export function onLogout() {
-    return async (dispatch) => {
-        try {
-            await userService.logout()
-            dispatch({
-                type: 'SET_USER',
-                user: null
-            })
-        } catch (err) {
-            showErrorMsg('Cannot logout')
-            console.log('Cannot logout', err)
-        }
-    }
-}
-
+//     }
+// }

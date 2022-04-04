@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-export function LoadCSV () {
-    
+export function LoadCSV ({setSongList}) {
+
     const [file, setFile] = useState();
     const [array, setArray] = useState([]);
   
@@ -22,6 +22,7 @@ export function LoadCSV () {
             }, {});
             return obj;
         });
+        setSongList(array)
       setArray(array);
     };
   
@@ -72,8 +73,8 @@ export function LoadCSV () {
         <tbody>
           {array.map((item) => (
             <tr key={item.id}>
-              {Object.values(item).map((val) => (
-                <td>{val}</td>
+              {Object.values(item).map((val, index) => (
+                <td key={index}>{val}</td>
               ))}
             </tr>
           ))}

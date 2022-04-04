@@ -1,15 +1,13 @@
-import { userService } from '../services/user.service.js'
-
 
 const initialState = {
-    user: userService.getLoggedinUser()
+    songList: null
 }
 
-export function userReducer(state = initialState, action) {
+export function songListReducer(state = initialState, action) {
     let newState = state;
     switch (action.type) {
-        case 'SET_USER':
-            newState = { ...state, user: action.user }
+        case 'SET_SONGLIST':
+            newState = { ...state, songList: action.songList }
             break;
         default:
     }
