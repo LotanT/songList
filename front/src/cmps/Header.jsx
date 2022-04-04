@@ -1,10 +1,10 @@
-import '../assets/style/_header.scss'
+import { Link } from 'react-router-dom';
 
 export function Header (){
     return(
         <section className='header'>
             <h1>List Songs</h1>
-            <button>Log In</button>
+            <Link to="/login">Log In</Link>
         </section>
     )
 }

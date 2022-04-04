@@ -1,9 +1,11 @@
+import { Link } from 'react-router-dom';
+
 export function HomePage() {
   return (
     <section className="homepage">
       <div className="center">
         <div className='welcome'>Welcome to List Songs</div>
-        <div className='start'>Let's Start</div>
+        <Link to="/SongList" className='start'>Let's Start</Link>
       </div>
     </section>
   );
