@@ -11,18 +11,31 @@ export default function Login() {
   const [isLogIn, setIsLogIn] = useState(true);
 
 
-  function validateForm() {
+  const validateForm = () => {
     return email.length > 0 && password.length > 0;
   }
 
-  function handleSubmit(ev) {
+  const handleSubmit = (ev) => {
     ev.preventDefault();
 
+  }
+
+  const toggleIsLogIn = () =>{
+    setIsLogIn(!isLogIn)
   }
 
   return (
     <div className="Login">
       <Form onSubmit={handleSubmit}>
+      {!isLogIn && <Form.Group size="lg" controlId="userName">
+          <Form.Label>User name</Form.Label>
+          <Form.Control
+            autoFocus
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </Form.Group>}
         <Form.Group size="lg" controlId="email">
           <Form.Label>Email</Form.Label>
           <Form.Control
@@ -42,9 +55,11 @@ export default function Login() {
         </Form.Group>
         <div className='footer'>
         <Button block size="lg" type="submit" disabled={!validateForm()}>
-          Login
+         {isLogIn && <span>Login</span>}
+         {!isLogIn && <span>Sign up</span>}
         </Button>
-      <span className='signup'>Not have account yet? Sign up</span>
+      {isLogIn && <span onClick={toggleIsLogIn} className='signup'>Not have account yet? Sign up</span>}
+      {!isLogIn && <span onClick={toggleIsLogIn} className='signup'>Already registerd? Log in</span>}
         </div>
       </Form>
     </div>
