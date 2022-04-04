@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
-export function Header (){
+export function Header () {
+    
     return(
         <section className='header'>
             <h1>List Songs</h1>

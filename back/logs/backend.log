@@ -54,3 +54,52 @@
 2.4.2022, 14:29:10 - ERROR - cannot find songs | {}
 2.4.2022, 14:29:10 - ERROR - Failed to get songs | {}
 2.4.2022, 14:30:23 - INFO - connect to Mongo
+4.4.2022, 10:36:51 - ERROR - Failed to signup TypeError: Cannot destructure property 'username' of 'req.body' as it is undefined.
+4.4.2022, 10:37:40 - ERROR - Failed to signup TypeError: Cannot destructure property 'username' of 'req.body' as it is undefined.
+4.4.2022, 10:38:01 - ERROR - Failed to signup TypeError: Cannot destructure property 'username' of 'req.body' as it is undefined.
+4.4.2022, 10:51:36 - ERROR - Failed to signup TypeError: Cannot destructure property 'username' of 'req.body' as it is undefined.
+4.4.2022, 10:52:47 - ERROR - Failed to signup TypeError: Cannot destructure property 'username' of 'req.body' as it is undefined.
+4.4.2022, 10:54:10 - ERROR - Failed to signup TypeError: Cannot destructure property 'username' of 'req.body' as it is undefined.
+4.4.2022, 10:54:14 - ERROR - Failed to signup TypeError: Cannot destructure property 'username' of 'req.body' as it is undefined.
+4.4.2022, 10:56:19 - ERROR - Failed to signup TypeError: Cannot destructure property 'username' of 'req.body' as it is undefined.
+4.4.2022, 11:02:47 - DEBUG - auth.service - signup with username: undefined, fullname: undefined
+4.4.2022, 11:02:47 - ERROR - Failed to signup fullname, username and password are required!
+4.4.2022, 11:08:50 - DEBUG - auth.service - signup with username: undefined, fullname: undefined
+4.4.2022, 11:08:50 - ERROR - Failed to signup fullname, username and password are required!
+4.4.2022, 11:09:01 - DEBUG - auth.service - signup with username: undefined, email: lotan@gmail.com
+4.4.2022, 11:09:01 - ERROR - Failed to signup email, username and password are required!
+4.4.2022, 11:10:58 - DEBUG - auth.service - signup with username: lotan, email: lotan@gamil.com
+4.4.2022, 11:10:58 - ERROR - Failed to signup ReferenceError: userService is not defined
+4.4.2022, 11:14:15 - DEBUG - auth.service - signup with username: lotan, email: lotan@gamil.com
+4.4.2022, 11:14:15 - INFO - connect to Mongo
+4.4.2022, 11:14:16 - DEBUG - auth.route - new account created: {"username":"lotan","password":"$2b$10$iA8c6.FRiNS9x2V0162HQ.os4w1mw09564N4OxKldyspUiLC5BPuG","email":"lotan@gamil.com","_id":"624aa8d8ba527a837fe80724"}
+4.4.2022, 11:14:16 - DEBUG - auth.service - login with username: lotan
+4.4.2022, 11:18:19 - DEBUG - auth.service - signup with username: lotan, email: lotan@gamil.com
+4.4.2022, 11:18:19 - INFO - connect to Mongo
+4.4.2022, 11:18:19 - ERROR - Failed to signup Username already taken
+4.4.2022, 11:18:33 - DEBUG - auth.service - signup with username: lotant, email: lotan@gamil.com
+4.4.2022, 11:18:33 - ERROR - Failed to signup TypeError: Cannot read properties of undefined (reading 'toString')
+4.4.2022, 11:18:46 - DEBUG - auth.service - signup with username: lotan, email: lotan@gamil.com
+4.4.2022, 11:18:46 - ERROR - Failed to signup Username already taken
+4.4.2022, 11:18:59 - DEBUG - auth.service - signup with username: lotant, email: lotan@gamil.com
+4.4.2022, 11:18:59 - ERROR - Failed to signup Username already taken
+4.4.2022, 11:19:19 - DEBUG - auth.service - signup with username: lotantt, email: lotan@gamil.com
+4.4.2022, 11:19:19 - ERROR - Failed to signup TypeError: Cannot read properties of undefined (reading 'toString')
+4.4.2022, 11:19:38 - DEBUG - auth.service - signup with username: lotantt, email: lotan@gamil.com
+4.4.2022, 11:19:38 - INFO - connect to Mongo
+4.4.2022, 11:19:38 - ERROR - Failed to signup Username already taken
+4.4.2022, 11:19:59 - DEBUG - auth.service - signup with username: lotanttt, email: lotan@gamil.com
+4.4.2022, 11:19:59 - DEBUG - auth.route - new account created: undefined
+4.4.2022, 11:19:59 - DEBUG - auth.service - login with username: lotanttt
+4.4.2022, 11:22:33 - DEBUG - auth.service - signup with username: lotan, email: lotan@gamil.com
+4.4.2022, 11:22:33 - INFO - connect to Mongo
+4.4.2022, 11:22:33 - DEBUG - auth.route - new account created: undefined
+4.4.2022, 11:22:33 - DEBUG - auth.service - login with username: lotan
+4.4.2022, 11:22:58 - DEBUG - auth.service - login with username: undefined
+4.4.2022, 11:22:58 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 11:25:26 - DEBUG - auth.service - login with username: undefined
+4.4.2022, 11:25:26 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 11:35:16 - DEBUG - auth.service - login with username: lotan
+4.4.2022, 11:35:19 - DEBUG - auth.service - login with username: lotan
+4.4.2022, 11:36:21 - DEBUG - auth.service - login with username: lotan
+4.4.2022, 11:36:22 - ERROR - Failed to Login Invalid username or password
