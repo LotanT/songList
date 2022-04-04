@@ -103,3 +103,7 @@
 4.4.2022, 11:35:19 - DEBUG - auth.service - login with username: lotan
 4.4.2022, 11:36:21 - DEBUG - auth.service - login with username: lotan
 4.4.2022, 11:36:22 - ERROR - Failed to Login Invalid username or password
+4.4.2022, 12:45:29 - DEBUG - auth.service - login with username: lotan
+4.4.2022, 12:45:29 - INFO - connect to Mongo
+4.4.2022, 12:59:02 - DEBUG - auth.service - login with username: lotan
+4.4.2022, 12:59:08 - DEBUG - auth.service - login with username: lotan

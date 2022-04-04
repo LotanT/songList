@@ -5,12 +5,20 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 40px;
-    a{
+    .login-signup-btn{
         padding: 5px;
         border-radius: 5px;
         border: none;
         background: rgba(106, 106, 255, 0.6705882353);
         box-shadow: 0px 0px 3px 0 grey;
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        .user-name{
+            font-weight: 600;
+            margin-right: 10px;
+        }
     }
 }
 

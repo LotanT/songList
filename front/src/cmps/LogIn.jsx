@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { connect } from 'react-redux'
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import { userService } from '../services/user.service';
+import { onLogin, onSignup } from '../store/user.actions';
 
-export default function Login() {
-  
+function _Login({onLogin, onSignup}) {
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [userName, setUserName] = useState('');
@@ -21,11 +22,12 @@ export default function Login() {
   };
 
   const logIn = () => {
-    userService.login({ username: userName , password });
+    console.log(onLogin);
+    onLogin({ username: userName , password });
   };
 
   const signup = () => {
-    userService.signup({ email, password, username: userName });
+    onSignup({ email, password, username: userName });
   };
 
   const toggleIsLogIn = () => {
@@ -80,3 +82,18 @@ export default function Login() {
     </div>
   );
 }
+
+function mapStateToProps(state) {
+  return {
+      user: state.userModule.user,
+  }
+}
+
+const mapDispatchToProps = {
+  onLogin,
+  onSignup
+}
+
+
+
+export const Login = connect(mapStateToProps, mapDispatchToProps)(_Login)
