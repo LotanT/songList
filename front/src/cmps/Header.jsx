@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux'
-import { useNavigate } from 'react-router-dom';
 
 import {onLogout} from '../store/user.actions.js'
 
@@ -11,6 +10,7 @@ function _Header ({user, onLogout}) {
         onLogout()
         navigate('/login')
     } 
+    
     return(
         <section className='header'>
             <Link className='logo' to='/'>List Songs</Link>
