@@ -5,7 +5,7 @@ export function HomePage() {
     <section className="homepage">
       <div className="center">
         <div className='welcome'>Welcome to List Songs</div>
-        <Link to="/SongList" className='start'>Let's Start</Link>
+        <Link to="/songlist" className='start'>Let's Start</Link>
       </div>
     </section>
   );

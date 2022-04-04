@@ -27,7 +27,7 @@ export function onSignup(credentials) {
                 user
             })
         } catch (err) {
-            // showErrorMsg('Cannot signup')
+            showErrorMsg('Cannot signup')
             console.log('Cannot signup', err)
         }
 

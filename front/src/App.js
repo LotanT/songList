@@ -1,8 +1,10 @@
 import './assets/style/main.scss';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
+import { SongList } from './pages/SongList';
 import { Header } from './cmps/Header';
 import { Login } from './cmps/LogIn';
+import { UserMsg } from './cmps/UserMsg';
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,7 +16,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/songlist" element={<SongList />} />
         </Routes>
+        <UserMsg />
       </BrowserRouter>
     </section>
   );

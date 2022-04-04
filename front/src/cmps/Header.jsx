@@ -1,17 +1,23 @@
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux'
+import { useNavigate } from 'react-router-dom';
 
 import {onLogout} from '../store/user.actions.js'
 
 function _Header ({user, onLogout}) { 
-    console.log(user); 
+    let navigate = useNavigate();
+    
+    const logout = () => {
+        onLogout()
+        navigate('/login')
+    } 
     return(
         <section className='header'>
-            <h1>List Songs</h1>
+            <Link className='logo' to='/'>List Songs</Link>
             {!user && <Link to="/login" className='login-signup-btn'>Log In</Link>}
             {user && <div className='user'>
                 <div className='user-name'>Hello {user.username}</div>
-                <button onClick={onLogout} className='login-signup-btn'>Log out</button>
+                <button onClick={logout} className='login-signup-btn'>Log out</button>
             </div>}
         </section>
     )

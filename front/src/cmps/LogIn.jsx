@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { onLogin, onSignup } from '../store/user.actions';
 
 function _Login({onLogin, onSignup}) {
+
+  let navigate = useNavigate();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -24,10 +27,12 @@ function _Login({onLogin, onSignup}) {
   const logIn = () => {
     console.log(onLogin);
     onLogin({ username: userName , password });
+    navigate('/songlist')
   };
-
+  
   const signup = () => {
     onSignup({ email, password, username: userName });
+    navigate('/songlist')
   };
 
   const toggleIsLogIn = () => {
