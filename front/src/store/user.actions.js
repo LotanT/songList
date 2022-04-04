@@ -2,10 +2,8 @@ import { userService } from "../services/user.service.js";
 import { showErrorMsg } from '../services/event-bus.service.js'
 
 export function onLogin(credentials) {
-    console.log(credentials);
     return async (dispatch) => {
         try {
-            console.log(credentials);
             const user = await userService.login(credentials)
             dispatch({
                 type: 'SET_USER',

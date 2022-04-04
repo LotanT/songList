@@ -24,14 +24,13 @@ function _Login({onLogin, onSignup}) {
     else signup()
   };
 
-  const logIn = () => {
-    console.log(onLogin);
-    onLogin({ username: userName , password });
+  const logIn = async () => {
+    await onLogin({ username: userName , password });
     navigate('/songlist')
   };
   
-  const signup = () => {
-    onSignup({ email, password, username: userName });
+  const signup = async () => {
+    await onSignup({ email, password, username: userName });
     navigate('/songlist')
   };
 

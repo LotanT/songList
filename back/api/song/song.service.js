@@ -2,16 +2,12 @@ const dbService = require('../../services/db.service')
 const logger = require('../../services/logger.service')
 let csvToJson = require('convert-csv-to-json');
 
-async function query() {
-    let collection
+async function getSongsByUserName(username) {
     try {
-        let criteria = {}
-        collection = await dbService.getCollection('song')
-        // console.log(collection);
-        var songs = await await collection.find(criteria).toArray()
+        const collection = await dbService.getCollection('song')
+        var songs = await collection.findOne({user: username})
         return songs
     } catch (err) {
-        console.log(collection);
         logger.error('cannot find songs', err)
         throw err
     }
@@ -20,7 +16,6 @@ async function query() {
 
 async function add(song) {
     try {
-        console.log(song);
         const collection = await dbService.getCollection('song')
         const addedSong = await collection.insertOne(song)
         return addedSong
@@ -32,6 +27,6 @@ async function add(song) {
 
 
 module.exports = {
-    query,
+    getSongsByUserName,
     add
 }

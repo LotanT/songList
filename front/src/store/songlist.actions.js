@@ -1,30 +1,29 @@
+import { songListService } from '../services/songList.service';
 
-
-export function setSongList(songList) {
-    return async (dispatch) => {
-        try {
-            // const user = await userService.login(credentials)
-            dispatch({
-                type: 'SET_SONGLIST',
-                songList
-            })
-        } catch (err) {
-            console.log('Cannot set song list', err)
-        }
+export function addSongList(newSongList) {
+  return async (dispatch) => {
+    try {
+      const songList = await songListService.add(newSongList);
+      dispatch({
+        type: 'SET_SONGLIST',
+        songList,
+      });
+    } catch (err) {
+      console.log('Cannot set song list', err);
     }
+  };
 }
 
-// export function onSignup(songList) {
-//     return async (dispatch) => {
-//         try {
-//             // const user = await userService.signup(credentials)
-//             dispatch({
-//                 type: 'SET_SONGLIST',
-//                 songList
-//             })
-//         } catch (err) {
-//             console.log('Cannot signup', err)
-//         }
-
-//     }
-// }
+export function loadSongList(songListName) {
+  return async (dispatch) => {
+    try {
+      const songList = await songListService.getById(songListName);
+      dispatch({
+        type: 'SET_SONGLIST',
+        songList,
+      });
+    } catch (err) {
+      console.log('Cannot set song list', err);
+    }
+  };
+}

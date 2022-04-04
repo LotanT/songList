@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HomePage } from './pages/HomePage';
 import { SongList } from './pages/SongList';
 import { Header } from './cmps/Header';
-import { Login } from './cmps/LogIn';
+import { Login } from './pages/LogIn';
 import { UserMsg } from './cmps/UserMsg';
 // import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';

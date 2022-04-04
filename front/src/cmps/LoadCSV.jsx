@@ -37,12 +37,9 @@ export function LoadCSV ({setSongList}) {
         fileReader.readAsText(file);
       }
     };
-  
-    const headerKeys = Object.keys(Object.assign({}, ...array));
 
     return(
         <div style={{ textAlign: "center" }}>
-        <h1>REACTJS CSV IMPORT EXAMPLE </h1>
         <form>
             <input
                 type={"file"}
@@ -59,27 +56,6 @@ export function LoadCSV ({setSongList}) {
                 IMPORT CSV
             </button>
         </form>
-        <br />
-
-      <table>
-        <thead>
-          <tr key={"header"}>
-            {headerKeys.map((key) => (
-              <th>{key}</th>
-            ))}
-          </tr>
-        </thead>
-
-        <tbody>
-          {array.map((item) => (
-            <tr key={item.id}>
-              {Object.values(item).map((val, index) => (
-                <td key={index}>{val}</td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
     </div>
     )
 

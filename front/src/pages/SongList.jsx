@@ -1,38 +1,67 @@
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import React, { useEffect, useState } from 'react';
-import { showErrorMsg } from '../services/event-bus.service.js'
+import React, { useEffect } from 'react';
+import { showErrorMsg } from '../services/event-bus.service.js';
 import { LoadCSV } from '../cmps/LoadCSV.jsx';
 
-import {setSongList} from '../store/songList.actions'
+import { addSongList, loadSongList } from '../store/songList.actions';
 
-export function _SongList({user, songList, setSongList}){
-    let navigate = useNavigate();
-    console.log(songList);
-    useEffect(()=>{
-        if(!user){
-            navigate('/login')
-            showErrorMsg('Login first!')
-        } 
-    },[])
+export function _SongList({ user, songList, addSongList, loadSongList }) {
 
-   
+  let navigate = useNavigate();
 
-    return(
-        <section className='song-list'>
-         <LoadCSV setSongList={setSongList}/>
-        </section>
-    )
+  useEffect(() => {
+    if (!user) {
+      navigate('/login');
+      showErrorMsg('Login first!');
+    }
+    loadSongList(user.username);
+  }, []);
+
+  const setListSong = (newSongList) => {
+    addSongList({ user: user.username, songList: newSongList });
+  };
+
+  let headerKeys;
+  if (songList?.songList)
+    headerKeys = Object.keys(Object.assign({}, ...songList.songList));
+
+  return (
+    <section className="song-list">
+      {songList?.songList && (
+        <table>
+          <thead>
+            <tr key={'header'}>
+              {headerKeys.map((key) => (
+                <th>{key}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {songList.songList.map((item, idx) => (
+              <tr key={idx}>
+                {Object.values(item).map((val) => (
+                  <td key={val}>{val}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+      {!songList?.songList && <LoadCSV setSongList={setListSong} />}
+    </section>
+  );
 }
 
 function mapStateToProps(state) {
-    return {
-        user: state.userModule.user,
-        songList: state.songListModule.songList
-    }
+  return {
+    user: state.userModule.user,
+    songList: state.songListModule.songList,
+  };
 }
 const mapDispatchToProps = {
-    setSongList
-}
+  addSongList,
+  loadSongList,
+};
 
-export const SongList = connect(mapStateToProps, mapDispatchToProps)(_SongList)
+export const SongList = connect(mapStateToProps, mapDispatchToProps)(_SongList);
