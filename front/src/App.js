@@ -1,11 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './assets/style/main.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HomePage } from './pages/HomePage';
+import { Header } from './cmps/Header';
+import Login from './cmps/LogIn';
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-     <h1>hello</h1>
-    </div>
+    <section className="app">
+      <BrowserRouter>
+        <Header/>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </BrowserRouter>
+    </section>
   );
 }
 

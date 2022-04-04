@@ -1,0 +1,23 @@
+@media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0;
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+
+    .btn{
+        margin-top: 15px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        .signup{
+          color: #0d6efd;
+          cursor: pointer;
+        }
+    }
+  }

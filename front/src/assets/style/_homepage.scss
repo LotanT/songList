@@ -1,0 +1,29 @@
+.homepage{
+    background-image: url('../imgs/background-img.jpg');
+    background-size: cover !important;
+    background-position: center !important;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .center{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+        .welcome{
+            background: rgb(244 244 244 / 35%);
+            color: mediumvioletred;
+            font-size: 4rem;
+            font-weight: 600;
+        }
+        .start{
+            margin-top: 60px;
+            font-size: 3rem;
+            width: 250px;
+            background: #6a6affab;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+}
